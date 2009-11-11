@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="artistIndexBean" class="ir.artist.ArtistIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_artist.dic" />
+		<constructor-arg value="full_artist.invf" />
+		<constructor-arg value="full_artist_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+	</bean>
+
+	<bean id="songIndexBean" class="ir.song.SongIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_song.dic" />
+		<constructor-arg value="full_song.invf" />
+		<constructor-arg value="full_song_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+	</bean>
+
+	<bean id="chordIndexBean" class="ir.chord.ChordDocumentIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_chord.dic" />
+		<constructor-arg value="full_chord.invf" />
+		<constructor-arg value="full_chord_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="chordGramIndexBean" class="ir.chordgram.ChordGramDocumentIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_chord_gram.dic" />
+		<constructor-arg value="full_chord_gram.invf" />
+		<constructor-arg value="full_chord_gram_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="chordProgressionIndexBean" class="ir.chordprogression.ChordProgressionDocumentIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_chord_prog.dic" />
+		<constructor-arg value="full_chord_prog.invf" />
+		<constructor-arg value="full_chord_prog_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="fileMgmtBean" class="ir.FileManagement">
+		<property name="fileRoot" value="${file.root.path}" />
+	</bean>
+	
+	<bean id="util" class="ir.Util" init-method="init">
+	</bean>
+
+</beans>

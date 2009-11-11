@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="chordIndexBean" class="ir.chord.ChordDocumentIndex">
+		<constructor-arg value="test_chords_songs.txt" />
+		<constructor-arg value="testc.dic" />
+		<constructor-arg value="testc.invf" />
+		<constructor-arg value="docPositionsc.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="chordProgressionIndexBean" class="ir.chordprogression.ChordProgressionDocumentIndex">
+		<constructor-arg value="test_chords_songs.txt" />
+		<constructor-arg value="testcp.dic" />
+		<constructor-arg value="testcp.invf" />
+		<constructor-arg value="docPositionscp.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="chordGramIndexBean" class="ir.chordgram.ChordGramDocumentIndex">
+		<constructor-arg value="test_chords_songs.txt" />
+		<constructor-arg value="testcg.dic" />
+		<constructor-arg value="testcg.invf" />
+		<constructor-arg value="docPositionscg.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="songIndexBean" class="ir.song.SongIndex">
+		<constructor-arg value="test_chords_songs.txt" />
+		<constructor-arg value="tests.dic" />
+		<constructor-arg value="tests.invf" />
+		<constructor-arg value="docPositionss.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+	</bean>
+
+	<bean id="artistIndexBean" class="ir.artist.ArtistIndex">
+		<constructor-arg value="test_chords_songs.txt" />
+		<constructor-arg value="testa.dic" />
+		<constructor-arg value="testa.invf" />
+		<constructor-arg value="docPositionsa.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+	</bean>
+
+	<bean id="fullChordIndexBean" class="ir.chord.ChordDocumentIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_chord.dic" />
+		<constructor-arg value="full_chord.invf" />
+		<constructor-arg value="full_chord_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="fullChordProgressionIndexBean" class="ir.chordprogression.ChordProgressionDocumentIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_chord_prog.dic" />
+		<constructor-arg value="full_chord_prog.invf" />
+		<constructor-arg value="full_chord_prog_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="fullChordGramIndexBean" class="ir.chordgram.ChordGramDocumentIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_chord_gram.dic" />
+		<constructor-arg value="full_chord_gram.invf" />
+		<constructor-arg value="full_chord_gram_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+		<property name="util" ref="util" />
+	</bean>
+
+	<bean id="fullSongIndexBean" class="ir.song.SongIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_song.dic" />
+		<constructor-arg value="full_song.invf" />
+		<constructor-arg value="full_song_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+	</bean>
+
+	<bean id="fullArtistIndexBean" class="ir.artist.ArtistIndex">
+		<constructor-arg value="all_chords_songs.txt" />
+		<constructor-arg value="full_artist.dic" />
+		<constructor-arg value="full_artist.invf" />
+		<constructor-arg value="full_artist_doc_pos.txt" />
+		<property name="fileMgmt" ref="fileMgmtBean" />
+	</bean>
+
+	<bean id="fileMgmtBean" class="ir.FileManagement">
+		<property name="fileRoot" value="${test.file.root.path}" />
+	</bean>
+	
+	<bean id="util" class="ir.Util" init-method="init">
+	</bean>
+</beans>
