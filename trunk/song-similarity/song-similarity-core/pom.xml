@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>ir</groupId>
+		<artifactId>song-similarity</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ir</groupId>
+	<artifactId>song-similarity-core</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>Music IR Song Similarity Core Project</name>
+
+	<properties>
+		<file.root.path>${env.FILE_ROOT_PATH}/main</file.root.path>
+		<test.file.root.path>${env.FILE_ROOT_PATH}/test</test.file.root.path>
+	</properties>
+</project>

@@ -1,0 +1,122 @@
+<S ID=1 NAME="Baby got back" ARTIST="Sir Mix a Lot">
+A B C D
+Em G Am
+</S>
+<S ID=2 NAME="You Found Me" ARTIST="The Frey">
+E F G A
+</S>
+<S ID=3 NAME="Intuition" ARTIST="Jewel">
+C D E
+</S>
+<S ID=4 NAME="Gone Daddy Gone" ARTIST="Violent Femmes">
+B B A D
+</S>
+<S ID=5 NAME="Sympathy For The Devil" ARTIST="Rolling Stones">
+A B C D
+E F G A
+</S>
+<S ID=6 NAME="You for the intuition" ARTIST="The Stones">
+B B A D
+</S>
+<S ID=7 NAME="Circle" ARTIST="Stones 6 Cycle Mind">
+  Song Title: Circle
+           Artist: 6 Cycle Mind (orig. by Edie Brickell)
+            Album: Home
+           Tuning: Half-step Down 
+        Tabbed By: jeff(hiz_44@yahoo.com)
+
+
+ Chord Variation:
+  
+      G  : 320033
+     G/F#: 2x0033
+      Em : 022033
+     Dsus: xx0233  
+      C9 : x32033
+      D  : xx0232
+      C  : x32013
+      Am : x02213
+ 
+
+ Intro: G-G/F#-Em-Dsus-C9-D [2x]
+
+ Verse 1
+
+      G   G/F#            Em                 Dsus
+      Me, Im a part of your circle of friends
+          G  G/F#              Em        Dsus
+      And we notice you dont come around
+      G  G/F#         Em       Dsus
+      Me, I think it all depends
+          G G/F#                  Em (pause)
+      On you touching ground with us
+
+      
+
+ Chorus:
+
+             G         G/F#
+      (But) I quit, I give up
+                 Em              Dsus      C9
+      Nothings good enough for anybody else
+          D
+      It seems
+            G          G/F#
+      And I quit, I give up
+                 Em              Dsus      C9
+      Nothings good enough for anybody else
+          D
+      It seems
+
+ 
+ Verse 2
+
+                       G     G/F#   Em
+      Everything is temporary anyway
+      Dsus       G          G/F#
+      When the streets are wet
+           Em          Dsus
+      The color slip into the sky
+           G                G/F#     Em  
+      But I don’t know why that means you and I are
+                  Dsus
+      That means you and
+
+
+      [repeat Chorus]
+
+
+ Bridge:
+
+     Em      G      Am
+      And being alone
+              C
+      Is the best way to be
+     Em      G          Am
+      When I’m by myself its
+           C
+      The best way to be
+     Em         G          Am
+      When I’m all alone its
+           C
+      The best way to be
+     Em         G        
+      When I’m by myself
+     Am                D
+      Nobody else can say
+
+
+      G   G/F#            Em                 Dsus
+      Me, Im a part of your circle of friends
+          G  G/F#              Em        Dsus
+      And we notice you don’t come around
+     
+      [repeat Chorus 2x]
+
+
+      - end -
+
+
+ for comments and suggestion.. email n lng po..
+     or sa friendster..
+</S>
